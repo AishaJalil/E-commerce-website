@@ -80,10 +80,10 @@ Total Price = Product Price × Quantity
 
 ## 🔗 Live Demo
 
-[Click here to view the live demo]([https://e-commerce-website-sandy-mu.vercel.app/])
-
+[Click here to view the live demo](https://e-commerce-website-sandy-mu.vercel.app/)
 
 ---
+
 ## 📬 Feedback
 
 For improvements or feedback, feel free to fork the repo or open an issue.
