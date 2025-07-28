@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">Tech Gadgets</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+
+        <!-- Products Dropdown -->
+        <div class="dropdown">
+          <a href="#">Products ▼</a>
+          <div class="dropdown-content">
+            <a href="product.html?id=01">Earpods</a>
+            <a href="product.html?id=02">Headphones</a>
+            <a href="product.html?id=03">Smartphones</a>
+            <a href="product.html?id=04">Smartwatches</a>
+            <a href="product.html?id=05">Gaming Mouse</a>
+            <a href="product.html?id=06">Mechanical Keyboard</a>
+            <a href="product.html?id=07">Laptop</a>
+            <a href="product.html?id=08">Tablet</a>
+            <a href="product.html?id=09">Portable Speaker</a>
+            <a href="product.html?id=10">Drones</a>
+            <a href="product.html?id=11">Powerbank</a>
+            <a href="product.html?id=12">Wired Headphones</a>
+            <a href="product.html?id=13">Samsung USB</a>
+            <a href="product.html?id=14">Charger Adapter</a>
+            <a href="product.html?id=15">Charger Cable</a>
+          </div>
+        </div>
+
+        <a href="cart.html">Cart 🛒(<span id="cart-count">0</span>)</a>
+      </nav>
+    </header>
+
+    <main class="product-page">
+      <div class="product-gallery">
+        <div class="gallery-main-wrapper">
+          <img
+            id="main-image"
+            src=""
+            alt="Product main image"
+            class="zoomable"
+          />
+          <div id="zoom-lens" class="zoom-lens hidden"></div>
+        </div>
+        <div id="zoom-result" class="zoom-result hidden"></div>
+        <div id="thumb-strip" class="thumb-strip"></div>
+      </div>
+
+      <div class="product-info-panel">
+        <h1 id="prod-name"></h1>
+        <p>
+          Base Price: <strong>$<span id="prod-price"></span></strong>
+        </p>
+
+        <div id="color-wrapper" class="variant-block hidden">
+          <h4>Color:</h4>
+          <div id="color-options" class="variant-options"></div>
+        </div>
+
+        <div id="size-wrapper" class="variant-block hidden">
+          <h4>Size:</h4>
+          <div id="size-options" class="variant-options"></div>
+        </div>
+
+        <div class="qty-block">
+          <h4>Quantity:</h4>
+          <div class="quantity-selector">
+            <button type="button" data-delta="-1" class="qty-btn">-</button>
+            <span id="qty-display">1</span>
+            <button type="button" data-delta="1" class="qty-btn">+</button>
+          </div>
+        </div>
+
+        <p class="total-line">
+          Total: <strong>$<span id="total-price"></span></strong>
+        </p>
+
+        <button id="add-to-cart-btn" class="btn btn-primary btn-lg">
+          Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      © <span id="year"></span> TechGadgets Demo.
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+      document.getElementById("cart-count").innerText = getCartCount();
+    </script>
+  </body>
+</html>
+```

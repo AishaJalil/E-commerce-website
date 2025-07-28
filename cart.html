@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">Tech Gadgets</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+
+        <!-- Products Dropdown -->
+        <div class="dropdown">
+          <a href="#">Products ▼</a>
+          <div class="dropdown-content">
+            <a href="product.html?id=01">Earpods</a>
+            <a href="product.html?id=02">Headphones</a>
+            <a href="product.html?id=03">Smartphones</a>
+            <a href="product.html?id=04">Smartwatches</a>
+            <a href="product.html?id=05">Gaming Mouse</a>
+            <a href="product.html?id=06">Mechanical Keyboard</a>
+            <a href="product.html?id=07">Laptop</a>
+            <a href="product.html?id=08">Tablet</a>
+            <a href="product.html?id=09">Portable Speaker</a>
+            <a href="product.html?id=10">Drones</a>
+            <a href="product.html?id=11">Powerbank</a>
+            <a href="product.html?id=12">Wired Headphones</a>
+            <a href="product.html?id=13">Samsung USB</a>
+            <a href="product.html?id=14">Charger Adapter</a>
+            <a href="product.html?id=15">Charger Cable</a>
+          </div>
+        </div>
+
+        <a href="cart.html">Cart 🛒(<span id="cart-count">0</span>)</a>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <h1>Your Cart</h1>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <p>Subtotal: <strong id="cart-subtotal">$0.00</strong></p>
+        <button id="clear-cart-btn" class="btn btn-danger">Clear Cart</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      © <span id="year"></span> TechGadgets Demo.
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+      document.getElementById("cart-count").innerText = getCartCount();
+    </script>
+  </body>
+</html>
+```
